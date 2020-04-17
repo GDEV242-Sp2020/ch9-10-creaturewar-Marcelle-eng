@@ -67,10 +67,8 @@ public abstract class Creature
         //implement this
         return false; //change this
     }
-   
-  
     
-   /**
+    /**
      * takeDamage receives a value for the amount of damage to subtract from 
      * the current total of hit points
      * @param damage value to remove from hit point count
@@ -79,22 +77,6 @@ public abstract class Creature
    {
        hp = hp - attackDamage;
    }
-      
-    
-    
-   
-   
-   // public int getHP() {
-     // return hitPoints;  
-   // }
-   
-   // public int getStrength() {
-     // return strength;  
-   
-   
-   // public void BattleWound(int gash) {
-     // hitPoints = hitPoints -  gash;  
-   // }
-}
+ }
     
 

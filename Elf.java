@@ -7,21 +7,18 @@
  */
 public class Elf extends Creature
 {
-    // instance variables - replace the example below with your own
-
     /**
      * Constructor for objects of class Elf
      */
     public Elf()
     {
-        // initialise instance variables
         super();
     }
     
     /**
      * Method that creates the Elf creature
-     * @param   hitpoints   hitpoints for the Elf must be between 3-20
-     * @param   stren       strength for the Elf must be between 10-15
+     * @param   hitpoints   
+     * @param   stren       
      */
     public Elf(int hitpoints, int stren) {
         super(hitpoints, stren);
@@ -33,7 +30,6 @@ public class Elf extends Creature
      */
     public int magicalDamage()
     {
-        // put your code here
         int percent,damageInherited;
         percent = Randomizer.nextInt(10) + 1;  //10% chance statement that unables a different damage outcome
         damageInherited = super.damage();

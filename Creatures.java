@@ -1,11 +1,11 @@
-//import java.util.Random;
+
 import java.util.ArrayList;
 
 /**
- * Write a description of class CreatureCreation here.
+ * Create all creatures and store them in an arrayList
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Marcelle Tamegnon 
+ * @version 04/16/2020
  */
 public class Creatures
 {
@@ -26,7 +26,7 @@ public class Creatures
     }
 
     /**
-     * An example of a method - replace this comment with your own
+     * switch statement that makes the creatures
      * 
      * @param  y   a sample parameter for a method
      * @return     the sum of x and y 

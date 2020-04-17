@@ -1,5 +1,6 @@
 /**
- * A type of Creature which inherits from the Demon object
+ * A type of Creature which inherits from the Demon super class
+ * CyberDemon are Regular demon
  * 
  * @author Marcelle Tamegnon
  * @version 11/11/15
@@ -19,8 +20,8 @@ public class CyberDemon extends Demon
     
     /**
      * Method that creates the CyberDemon
-     * @param   hitpoints   the hitponts for the CyberDemon must be between 5-13
-     * @param   stren       the strength for the CyberDemon must be between 5-28
+     * @param   hitpoints   
+     * @param   stren     
      */
     public CyberDemon(int hitpoints, int stren) {
         super(hitpoints, stren);

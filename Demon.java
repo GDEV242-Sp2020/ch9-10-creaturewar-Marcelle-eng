@@ -14,10 +14,19 @@ public class Demon extends Creature
       super();
     }
 
+    /**
+     * Method that creates the Demon
+     * @param   hp   
+     * @param   str    
+     */
     public Demon(int hp, int str) {
       super(hp, str);  
     }
 
+    /**
+     * Method that calculates the damage from demons
+     * return damageDone   the damage that the creature has done
+     */
     public int damage() {
       int percent = Randomizer.nextInt(20);
       int damageInherited = super.damage();

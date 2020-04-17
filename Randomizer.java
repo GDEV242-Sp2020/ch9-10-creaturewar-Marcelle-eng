@@ -3,8 +3,8 @@ import java.util.Random;
 /**
  * Write a description of class Randomizer here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author 
+ * @version 
  */
 public class Randomizer
 {
@@ -20,10 +20,10 @@ public class Randomizer
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * static method that creates a new random object and genarates 
+     * a random number given a cetain range
+     * @param int y   
+     * @return    a random number in the rage of y
      */
     public static int nextInt(int y)
     {

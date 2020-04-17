@@ -1,10 +1,11 @@
 import java.util.ArrayList;
-import java.util.Random;
+
 
 /**
- * Write a description of class WarBattle here.
+ * this class implement the war between army 1 and army2 and keeps
+ * tag of the death until there is one army standing
  * 
- * @author (your name) 
+ * @author Marcelle Tamegnon
  * @version (a version number or a date)
  */
 public class WarBattle
@@ -12,7 +13,6 @@ public class WarBattle
     // instance variables - replace the example below with your own
     private ArrayList<Creature> army1;
     private ArrayList<Creature> army2;
-    private Random random = new Random();
     private Creatures creation = new Creatures();
     private Creature theCreature1;
     private Creature theCreature2;
@@ -33,20 +33,35 @@ public class WarBattle
         }
     }
     
+    /**
+     * accessor method for creature1
+     * no parameter
+     * return theCreature1
+     */
     public Creature getOneCurrent() 
     {
          return theCreature1;
     }
     
+    /**
+     * accessor method for creature2
+     * no parameter
+     * return theCreature2
+     */
     public Creature getTwoCurrent()
     {
         return theCreature2;
     }
     
+    /**
+     * set the battle between created armies.
+     * takes no parameters
+     * state the winner army
+     */
     public void Battle()
     {
         System.out.println("--------------------------");
-        System.out.println("THE WAR BEGIN!!!!!");
+        System.out.println("NOW THE WAR BEGINS!!!!!");
         while (army1.size() != 0 && army2.size() != 0) {
            theCreature1 = army1.get(0);
            theCreature2 = army2.get(0);
