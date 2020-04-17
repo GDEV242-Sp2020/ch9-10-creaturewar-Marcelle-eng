@@ -39,14 +39,14 @@ public class Creatures
         switch (creation) {
             case "human":       madeCreature = new Human((Randomizer.nextInt((30 - 10) + 1) + 10), (Randomizer.nextInt((18 - 5) + 1) + 5));
                                 break;
+                                
+            case "elf":         madeCreature = new Elf(Randomizer.nextInt((25 - 8) + 1) + 8,Randomizer.nextInt((18 - 5) + 1) + 5);
+                                break;                    
                              
-            case "cyberDemon":  madeCreature = new CyberDemon(Randomizer.nextInt((28 - 5) + 1) + 5, Randomizer.nextInt((13 - 5) + 1) + 5);
+            case "cyberDemon":  madeCreature = new CyberDemon(Randomizer.nextInt((100 - 25) + 1) + 25, Randomizer.nextInt((40 - 20) + 1) + 20);
                                 break;
                                 
-            case "elf":         madeCreature = new Elf(Randomizer.nextInt((20 - 3) + 1) + 5,Randomizer.nextInt((15 - 10) + 1) + 5);
-                                break;
-                                
-            case "balrog":      madeCreature = new Balrog(Randomizer.nextInt((25 - 10) + 1) + 10, Randomizer.nextInt((10 - 5) + 1) + 5);
+           case "balrog":      madeCreature = new Balrog(Randomizer.nextInt((100 - 25) + 1) + 25, Randomizer.nextInt((40 - 20) + 1) + 20);
                                 break;
             
             default:             madeCreature = null;
