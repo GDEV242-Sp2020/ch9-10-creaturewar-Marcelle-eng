@@ -14,8 +14,8 @@ public class WarBattle
     private ArrayList<Creature> army2;
     private Random random = new Random();
     private Creatures creation = new Creatures();
-    private Creature currentCreature1;
-    private Creature currentCreature2;
+    private Creature theCreature1;
+    private Creature theCreature2;
     
 
     /**
@@ -28,7 +28,6 @@ public class WarBattle
         army2 = new ArrayList<Creature>();
         
         for (int i = 0; i < creatureNumber; i++) {
-            
             army1.add(creation.makeCreature());
             army2.add(creation.makeCreature());
         }
@@ -36,40 +35,40 @@ public class WarBattle
     
     public Creature getOneCurrent() 
     {
-         return currentCreature1;
+         return theCreature1;
     }
     
     public Creature getTwoCurrent()
     {
-        return currentCreature2;
+        return theCreature2;
     }
     
     public void Battle()
     {
         System.out.println("--------------------------");
-        System.out.println("LET THE WAR BEGIN!!!!!");
+        System.out.println("THE WAR BEGIN!!!!!");
         while (army1.size() != 0 && army2.size() != 0) {
-            currentCreature1 = army1.get(0);
-            currentCreature2 = army2.get(0);
+           theCreature1 = army1.get(0);
+           theCreature2 = army2.get(0);
             
-            currentCreature2.takeDamage(currentCreature1.damage());
-            System.out.println(currentCreature1.getClass().getSimpleName()+ " attacks " +currentCreature2.getClass().getSimpleName());
+            theCreature2.takeDamage(theCreature1.damage());
+            System.out.println(theCreature1.getClass().getSimpleName()+ " attacks " +theCreature2.getClass().getSimpleName());
             
-            if (army2.size() > 1 && !currentCreature2.fallenCreature()) {
-                army2.remove(currentCreature2);
-                currentCreature2 = army2.get(0);
+            if (army2.size() > 1 && !theCreature2.isAlive()) {
+                army2.remove(theCreature2);
+                theCreature2 = army2.get(0);
             
             }
-            System.out.println("Side one has " +army1.size()+ " creatures remaining");
+            System.out.println("One side has " +army1.size()+ " creatures remaining");
            
-            currentCreature1.takeDamage(currentCreature2.damage());
-            System.out.println(currentCreature2.getClass().getSimpleName()+ " attacks " +currentCreature1.getClass().getSimpleName());
+           theCreature1.takeDamage(theCreature2.damage());
+            System.out.println(theCreature2.getClass().getSimpleName()+ " attacks " +theCreature1.getClass().getSimpleName());
             
-            if (!currentCreature1.fallenCreature()) {
-                army1.remove(currentCreature1);
+            if (!theCreature1.isAlive()) {
+                army1.remove(theCreature1);
             }
             
-            System.out.println("Side two has " +army2.size()+ " creatures remaining");
+            System.out.println("The other side has " +army2.size()+ " creatures remaining");
             System.out.println(army1.size());
             System.out.println(army1.size());
         }
