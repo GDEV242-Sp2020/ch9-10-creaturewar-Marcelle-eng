@@ -1,4 +1,4 @@
-
+import java.util.Random;
 /**
  * Write a description of class Elf here.
  *
@@ -7,6 +7,7 @@
  */
 public class Elf extends Creature
 {
+    private Random random = new Random();
     /**
      * Constructor for objects of class Elf
      */
@@ -31,7 +32,7 @@ public class Elf extends Creature
     public int magicalDamage()
     {
         int percent,damageInherited;
-        percent = Randomizer.nextInt(10) + 1;  //10% chance statement that unables a different damage outcome
+        percent = random.nextInt(10) + 1;  //10% chance statement that unables a different damage outcome
         damageInherited = super.damage();
         if (percent == 3) 
         {

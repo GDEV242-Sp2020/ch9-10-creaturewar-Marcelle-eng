@@ -1,6 +1,6 @@
 
 import java.util.ArrayList;
-
+import java.util.Random;
 /**
  * Create all creatures and store them in an arrayList
  * 
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class Creatures
 {
     // instance variables - replace the example below with your own
-    //private Random random = new Random();
+    private Random random = new Random();
     private ArrayList<String> army = new ArrayList<String>();
 
     /**
@@ -34,19 +34,19 @@ public class Creatures
     public Creature makeCreature()
     {
         Creature madeCreature;
-        int numberIndex = Randomizer.nextInt(army.size());
+        int numberIndex = random.nextInt(army.size());
         String creation = army.get(numberIndex);
         switch (creation) {
-            case "human":       madeCreature = new Human((Randomizer.nextInt((30 - 10) + 1) + 10), (Randomizer.nextInt((18 - 5) + 1) + 5));
+            case "human":       madeCreature = new Human((random.nextInt((30 - 10) + 1) + 10), (random.nextInt((18 - 5) + 1) + 5));
                                 break;
                                 
-            case "elf":         madeCreature = new Elf(Randomizer.nextInt((25 - 8) + 1) + 8,Randomizer.nextInt((18 - 5) + 1) + 5);
+            case "elf":         madeCreature = new Elf(random.nextInt((25 - 8) + 1) + 8,random.nextInt((18 - 5) + 1) + 5);
                                 break;                    
                              
-            case "cyberDemon":  madeCreature = new CyberDemon(Randomizer.nextInt((100 - 25) + 1) + 25, Randomizer.nextInt((40 - 20) + 1) + 20);
+            case "cyberDemon":  madeCreature = new CyberDemon(random.nextInt((100 - 25) + 1) + 25, random.nextInt((40 - 20) + 1) + 20);
                                 break;
                                 
-           case "balrog":      madeCreature = new Balrog(Randomizer.nextInt((100 - 25) + 1) + 25, Randomizer.nextInt((40 - 20) + 1) + 20);
+           case "balrog":      madeCreature = new Balrog(random.nextInt((100 - 25) + 1) + 25, random.nextInt((40 - 20) + 1) + 20);
                                 break;
             
             default:             madeCreature = null;

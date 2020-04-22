@@ -16,7 +16,7 @@ public abstract class Creature
    private int hp;
    private int hitPoints;
    private int strength;
-   Random randomGenerator = new Random();
+   Random random = new Random();
    
    /** Constructor
     * set hitpoints and strength to 10 for all creatures
@@ -42,7 +42,7 @@ public abstract class Creature
      * @return a value between 1 and str to be used to cause damage to another creature
      */
     public int damage(){
-       return randomGenerator.nextInt(strength)+1;
+       return random.nextInt(strength +1);
     }
     
       

@@ -1,13 +1,16 @@
 #BlueJ class context
 comment0.target=WarBattle
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ WarBattle\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ this\ class\ implement\ the\ war\ between\ army\ 1\ and\ army2\ and\ keeps\r\n\ tag\ of\ the\ death\ until\ there\ is\ one\ army\ standing\r\n\ \r\n\ @author\ Marcelle\ Tamegnon\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=creatureNumber
 comment1.target=WarBattle(int)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ WarBattle\r\n\ @param\ \ \ \ creatureNumber\ \ \ \ installes\ how\ many\ creature\ are\ being\ created\r\n
 comment2.params=
 comment2.target=Creature\ getOneCurrent()
+comment2.text=\r\n\ accessor\ method\ for\ creature1\r\n\ no\ parameter\r\n\ return\ theCreature1\r\n
 comment3.params=
 comment3.target=Creature\ getTwoCurrent()
+comment3.text=\r\n\ accessor\ method\ for\ creature2\r\n\ no\ parameter\r\n\ return\ theCreature2\r\n
 comment4.params=
 comment4.target=void\ Battle()
+comment4.text=\r\n\ set\ the\ battle\ between\ created\ armies.\r\n\ takes\ no\ parameters\r\n\ state\ the\ winner\ army\r\n
 numComments=5

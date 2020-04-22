@@ -1,3 +1,4 @@
+import java.util.Random;
 /**
  * This is the Demon subtype class. Demons have a 5% chance to do magical damage.
  * 
@@ -6,6 +7,7 @@
  */
 public class Demon extends Creature
 {
+     private Random random = new Random();
      /**
      * Constructor for objects of class Demon
      */
@@ -28,7 +30,7 @@ public class Demon extends Creature
      * return damageDone   the damage that the creature has done
      */
     public int damage() {
-      int percent = Randomizer.nextInt(20);
+      int percent = random.nextInt(20);
       int damageInherited = super.damage();
       if (percent == 3) {
             
